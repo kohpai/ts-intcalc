@@ -13,39 +13,15 @@ function isInstanceOfQueryInput(object: any): object is QueryInput {
 }
 
 app.get('/add', function (req, res) {
-    const query = req.query
-    if (!isInstanceOfQueryInput(query)) {
-        res.status(400).json('Invalid input')
-        return
-    }
-
-    const num1 = parseInt(query.num1 as string)
-    const num2 = parseInt(query.num2 as string)
-    res.status(200).json(num1 + num2)
+    // your code ...
 })
 
 app.get('/mul', function (req, res) {
-    const query = req.query
-    if (!isInstanceOfQueryInput(query)) {
-        res.status(400).json('Invalid input')
-        return
-    }
-
-    const num1 = parseInt(query.num1 as string)
-    const num2 = parseInt(query.num2 as string)
-    res.status(200).json(num1 * num2)
+    // your code ...
 })
 
 app.get('/div', function (req, res) {
-    const query = req.query
-    if (!isInstanceOfQueryInput(query)) {
-        res.status(400).json('Invalid input')
-        return
-    }
-
-    const num1 = parseInt(query.num1 as string)
-    const num2 = parseInt(query.num2 as string)
-    res.status(200).json(num1 / num2)
+    // your code ...
 })
 
 app.listen(port, function () {
